@@ -1,0 +1,417 @@
+@import url(./header.css);
+@import url(./navbar.css);
+@import url(./news.css);
+@import url(./team.css);
+@import url(schedule.css);
+@import url(history.css);
+@import url(contacts.css); 
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1065px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .navbar-links{
+        position: absolute;
+        right: -315px;
+        top: 54px;
+        background-color: #000;
+        border: 1px solid red;
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-right: 0px;
+        transition: 2s;
+    }
+
+    .game-photo{
+        display: none;
+    }
+
+    .game-photo2{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .navbar-links_open{
+        transform: translateX(-100%);
+    }
+    
+    .vertical-line2{
+        display: none;
+    }
+    
+    .nav-button{
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: orangered;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+
+    .nav-button:hover{
+        background-color: #F28C28;
+    }
+
+    .page-news{
+        background: linear-gradient(to right, #009245  0%, #FCEE21 100%);
+        padding-bottom: 20px;
+    }
+
+    .news-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 270px);
+        justify-content: center;
+        gap: 20px;
+        padding-top: 50px;
+    }
+
+    .news-card{
+        width: 260px;
+    }
+
+    .news-img__container{
+        width: 260px;
+        height: 143px;
+    }
+
+    .page-team{
+        background-image: none;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );;
+        padding-bottom: 20px;
+        min-height: 620px;
+    }
+
+    .player-cards{
+        display: none;
+    }
+    
+    .player-card2{
+        width: 215px;
+        height: 305px;
+        position: absolute;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .player-card2.active{
+        opacity: 1;
+    }
+    
+    .player-card2:hover{
+        cursor: pointer;
+    }
+
+    .page-content2{
+        display: block;
+        margin: 0 auto;
+        width:600px;
+        max-height: 600px;
+        border: 1px solid black;
+      border-radius: 20px;
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    
+    .container{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .control-btn1, .control-btn2{
+        width: 80px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 30px;
+        color: black;
+        background-color: #FBAB7E;
+        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    .control-btn1:hover, .control-btn2:hover{
+        background-image: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% );
+        color: white;
+        transition: 1s;
+    }
+    
+    .control-btn1{
+        margin-right: 10px;
+    }
+
+    .page-schedule{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,160,187,1) 0%, rgba(0,188,219,0.90) 90% );
+        background-image: none;
+        padding-bottom: 20px;
+    }
+    
+    .schedule-table{
+        display: none;
+    }
+
+    .xxx{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid black;
+        width: 700px;
+        padding: 15px;
+       }
+
+    .table2{
+        display: block;
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+       }
+
+    .date{
+        font-weight: bold;
+    }
+    
+    .upper-part{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    
+    .page-history__photos{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
+        justify-content: center;
+        border: 1px solid #000;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: #55efc4;
+        background-image: linear-gradient(315deg, #55efc4 0%, #000000 74%);
+    }
+    
+    .photo-card{
+        width: 200px;
+    }
+
+    .page-history__right-side{
+        width: 400px;
+    }
+
+    .blocks{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 260px);
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar-links{
+        position: absolute;
+        right: -200px;
+        top: 54px;
+        background-color: #000;
+        border: 1px solid red;
+        width: 200px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-right: 0px;
+        transition: 2s;
+    }
+
+    .game-photo{
+        display: none;
+    }
+
+    .game-photo2{
+        display: none;
+    }
+
+    .game-photo3{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .navbar-links_open{
+        transform: translateX(-100%);
+    }
+    
+    .vertical-line2{
+        display: none;
+    }
+    
+    .nav-button{
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: orangered;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+
+    .nav-button:hover{
+        background-color: #F28C28;
+    }
+
+    .page-news{
+        background-image: linear-gradient( 180.7deg,  rgba(0,213,255,1) 2.5%, rgba(79,255,255,1) 97.7% );
+        padding-bottom: 20px;
+    }
+
+    .news-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 270px);
+        justify-content: center;
+        gap: 20px;
+        padding-top: 50px;
+    }
+
+    .news-card{
+        width: 260px;
+    }
+
+    .news-img__container{
+        width: 260px;
+        height: 143px;
+    }
+
+    .page-team{
+        background-image: none;
+        background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );
+        padding-bottom: 20px;
+    }
+
+    .page-content2{
+        display: none;
+    }
+
+    .player-cards{
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+        grid-template-columns: repeat(1, 215px);
+    }
+
+    .page-schedule{
+        background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+        padding-bottom: 20px;
+    }
+    
+    .schedule-table{
+        display: none;
+    }
+
+    .xxx{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid black;
+        width: 400px;
+        padding: 15px;
+       }
+
+    .table2{
+        display: block;
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+       }
+
+    .date{
+        font-weight: bold;
+    }
+
+    .upper-part{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    
+    .page-history__photos{
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+        gap: 10px;
+        justify-content: center;
+        border: 1px solid #000;
+        border-radius: 10px;
+        margin: 10px;
+        background-image: linear-gradient( 108deg,  rgba(242,245,139,1) 17.7%, rgba(148,197,20,0.68) 91.2% );
+    }
+    
+    .photo-card{
+        width: 200px;
+    }
+
+    .number{
+        border: 1px solid #000;
+        color: #000;
+        border-radius: 50%;
+        padding: 10px 15px;
+        margin: 10px;
+    }
+    
+    .description{
+        color: #000;
+        font-size: 13px;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .page-history__right-side{
+        width: 400px;
+    }
+
+    .blocks{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(3, 260px);
+        gap: 40px;
+        padding-bottom: 20px;
+    }
+}
