@@ -1,0 +1,49 @@
+.page-header{
+    background-color: #000;
+    width: 100%;
+    min-height: 70px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-image1{
+    max-width: 50px;
+    max-height: 45px;
+    margin-right: 15px;
+}
+
+.header-image2{
+    max-width: 85px;
+    max-height: 45px;
+    margin-left: 15px;
+}
+
+.partners-image{
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.partners a{
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.left-side{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vertical-line{
+    width: 0px;
+    height: 45px;
+    border: 1px solid #fff;
+}
