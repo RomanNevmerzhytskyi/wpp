@@ -1,0 +1,119 @@
+.page-schedule{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #dbf26e;
+    background-image: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
+}
+
+.schedule-table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    /* min-width: 400px; */
+}
+
+.table2{
+    display: none;
+}
+
+th, td{
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+td:nth-child(2), th:nth-child(2){
+    width: 500px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th:nth-child(2){
+    height: 50px;
+}
+
+/* caption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+} */
+
+.league-img{
+    width: 108px;
+    height: 28px;
+    
+}
+
+.league-img1{
+    width: 44px;
+    height: 28px;
+    
+}
+
+.league-img2{
+    width: 78px;
+    height: 58px;
+    padding: 5px;
+}
+
+.league-img3{
+    width: 55px;
+    height: 50px;
+    padding: 5px;
+}
+
+.league-img4{
+    width: 64px;
+    height: 28px;
+    padding: 5px;
+}
+
+.vertical-line3{
+    width: 0px;
+    height: 45px;
+    border: 1px solid #000;
+}
+
+.table-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-link{
+    width: 60px;
+    height: 30px;
+    border: 1px solid #006D3E;
+    padding: 8px 18px;
+    background-color: #006D3E;
+    text-decoration: none;
+    color: #fff;
+}
+
+.table-flex img{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.data-flex{
+    width: 100px;
+}
+
+.first-row{
+    background-color: #006D3E;
+    color: #fff;
+}
+
+.schedule-title{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 300;
+    color: #006D3E;
+    letter-spacing: 8px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
