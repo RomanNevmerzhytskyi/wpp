@@ -1,0 +1,28 @@
+.page-contacts{
+    width: 100%;
+    min-height: 800px;
+    background-image: url(./images/contacts/web-footer.jpg);
+    /* background-color: #006D3E; */
+}
+
+.contacts-title{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-align: center;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+.blocks{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: 200px 200px;
+    gap: 40px;
+}
+
+.contact-block{
+    color: #fff;
+}
